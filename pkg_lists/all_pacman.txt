@@ -30,6 +30,7 @@ bison
 bluez
 bluez-libs
 bluez-utils
+brave-bin
 breeze-icons
 brightnessctl
 brotli
@@ -708,4 +709,7 @@ zix
 zlib
 zlib-ng
 zram-generator
+zsh
+zsh-theme-powerlevel10k-git
+zsh-theme-powerlevel10k-git-debug
 zstd

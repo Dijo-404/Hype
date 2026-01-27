@@ -2,7 +2,6 @@
     "logo": {
         "source": "/home/dj/.config/fastfetch/logo/pochita.icon",
         "type": "kitty-direct",
-        "height": 22,
         "padding": {
             "top": 2,
             "left": 3,

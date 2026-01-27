@@ -1,4 +1,3 @@
-antigravity
 base
 base-devel
 bluez
@@ -16,7 +15,6 @@ fastfetch
 firefox
 git
 grim
-grimblast-git
 grub
 gst-plugin-pipewire
 htop
@@ -40,12 +38,10 @@ libva-intel-driver
 linux
 linux-firmware
 linux-lts
-miniconda3
 nano
 neovim
 network-manager-applet
 networkmanager
-papirus-folders-catppuccin-git
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -76,13 +72,11 @@ wget
 wireless_tools
 wireplumber
 wl-clipboard
-wlogout
 wofi
 wpa_supplicant
 xdg-desktop-portal-hyprland
 xdg-utils
 xorg-server
 xorg-xinit
-yay-bin
-yay-bin-debug
 zram-generator
+zsh

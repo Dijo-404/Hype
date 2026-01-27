@@ -14,3 +14,20 @@
 //@theme "/usr/share/rofi/themes/fancy.rasi"
 
 @theme "/usr/share/rofi/themes/material.rasi"
+
+window {
+    transparency: "real";
+    background-color: #2d353bF2;
+    border: 2px;
+    border-radius: 4px;
+    border-color: #e67e80;
+}
+
+mainbox {
+    background-color: transparent;
+    border: 0;
+}
+
+* {
+    base0D: #e67e80;
+}

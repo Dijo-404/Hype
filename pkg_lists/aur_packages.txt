@@ -1,8 +1,9 @@
 antigravity
+brave-bin
 grimblast-git
 miniconda3
 papirus-folders-catppuccin-git
 wlogout
-wlogout-debug
 yay-bin
 yay-bin-debug
+zsh-theme-powerlevel10k-git
