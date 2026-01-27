@@ -4,6 +4,7 @@ grimblast-git
 miniconda3
 papirus-folders-catppuccin-git
 wlogout
+sddm-sugar-candy-git
 yay-bin
 yay-bin-debug
 zsh-theme-powerlevel10k-git

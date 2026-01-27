@@ -56,6 +56,9 @@ qt6-wayland
 qt6ct
 rofi
 sddm
+qt5-graphicaleffects
+qt5-quickcontrols2
+qt5-svg
 slurp
 smartmontools
 sof-firmware
