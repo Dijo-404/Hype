@@ -31,14 +31,6 @@
             "*": 10
         }
     },
-    "hyprland/window": {
-        "format": "{class}",
-        "max-length": 50,
-        "separate-outputs": true,
-        "rewrite": {
-            "": "Desktop"
-        }
-    },
     "hyprland/submap": {
         "format": " {}",
         "max-length": 8,
@@ -123,15 +115,6 @@
             "󰂂",
             "󰁹"
         ]
-    },
-    "network": {
-        "interval": 2,
-        "format-wifi": "󰤨 {signalStrength}%",
-        "format-ethernet": "󰈀 {ipaddr}",
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr} via {gwaddr}",
-        "format-linked": "󰈀 {ifname}",
-        "format-disconnected": "󰤭 Disconnected",
-        "format-alt": "{essid}"
     },
     "pulseaudio": {
         "format": "{icon}",
