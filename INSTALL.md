@@ -41,7 +41,7 @@ Clone this repository and copy the config files to your local `~/.config` direct
 
 ```bash
 # Clone the repo (if you haven't already)
-git clone https://github.com/YOUR_USERNAME/Hype.git
+git clone https://github.com/Dijo-404/Hype.git
 cd Hype
 git checkout Dj-Configs
 
@@ -56,8 +56,11 @@ cp -r fastfetch ~/.config/
 cp -r qt5ct ~/.config/
 cp -r qt6ct ~/.config/
 
+# Copy Wallpapers
+mkdir -p ~/Pictures/Wallpapers
+cp -r Wallpapers/* ~/Pictures/Wallpapers/
 # Ensure scripts are executable (if any)
-chmod +x ~/.config/hypr/scripts/*
+chmod +x ~/.config/waybar/scripts/*
 ```
 
 ## 4. Post-Install
