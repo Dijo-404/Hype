@@ -1,0 +1,27 @@
+# GRUB boot loader configuration
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="Arch"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet splash"
+GRUB_CMDLINE_LINUX="cryptdevice=UUID=771095a7-bcca-4840-8409-bc7d9cb1ed2b:root zswap.enabled=0 rootfstype=btrfs"
+
+# Resolution (HiDPI fix - use lower res that scales up)
+GRUB_GFXMODE=1280x800,auto
+GRUB_GFXPAYLOAD_LINUX=keep
+
+# Modules
+GRUB_PRELOAD_MODULES="part_gpt part_msdos"
+
+# Timeout style
+GRUB_TIMEOUT_STYLE=menu
+
+# Console
+GRUB_TERMINAL_INPUT=console
+GRUB_TERMINAL_OUTPUT=gfxterm
+
+# Theme (in unencrypted EFI partition for LUKS)
+GRUB_THEME="/boot/EFI/themes/vimix/theme.txt"
+
+# Disable recovery
+GRUB_DISABLE_RECOVERY=true
