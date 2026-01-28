@@ -3,6 +3,8 @@
 # Power Profile Menu Script for Waybar
 # Uses rofi for dropdown selection
 
+ID=2004
+
 get_current_profile() {
     powerprofilesctl get
 }
@@ -16,16 +18,46 @@ get_icon() {
     esac
 }
 
+get_name() {
+    case $1 in
+        "performance") echo "Performance" ;;
+        "balanced") echo "Balanced" ;;
+        "power-saver") echo "Power Saver" ;;
+        *) echo "$1" ;;
+    esac
+}
+
+send_notification() {
+    profile=$1
+    icon=$(get_icon "$profile")
+    name=$(get_name "$profile")
+    dunstify -a "Power" -r "$ID" -u low \
+        -h string:x-dunst-stack-tag:power \
+        "$icon  Power Mode: $name"
+}
+
 if [[ "$1" == "menu" ]]; then
     # Show rofi menu
     options="󰓅 Performance\n󰾅 Balanced\n󰾆 Power Saver"
     choice=$(echo -e "$options" | rofi -dmenu -p "Power Profile" -i)
     
     case "$choice" in
-        *"Performance"*) powerprofilesctl set performance ;;
-        *"Balanced"*) powerprofilesctl set balanced ;;
-        *"Power Saver"*) powerprofilesctl set power-saver ;;
+        *"Performance"*)
+            powerprofilesctl set performance
+            send_notification "performance"
+            ;;
+        *"Balanced"*)
+            powerprofilesctl set balanced
+            send_notification "balanced"
+            ;;
+        *"Power Saver"*)
+            powerprofilesctl set power-saver
+            send_notification "power-saver"
+            ;;
     esac
+    
+    # Signal waybar to update
+    pkill -RTMIN+16 waybar
 else
     # Output for waybar
     current=$(get_current_profile)
