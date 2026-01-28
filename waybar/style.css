@@ -142,18 +142,19 @@ window#waybar {
     color: @bg0;
 }
 
-/* Pulseaudio muted */
-#pulseaudio.muted {
+/* Volume muted - yellow color */
+#pulseaudio.muted,
+#pulseaudio.bluetooth.muted {
     background-color: @yellow;
     color: @bg0;
 }
 
-/* Microphone muted - trying multiple selectors */
-#pulseaudio\.microphone.source-muted,
-#pulseaudio\.microphone.muted {
+/* Microphone muted - keep default background, no color change */
+/* #pulseaudio.microphone.source-muted,
+#pulseaudio.microphone.muted {
     background-color: @yellow;
     color: @bg0;
-}
+} */
 
 /* Network disconnected */
 #network.disconnected {
