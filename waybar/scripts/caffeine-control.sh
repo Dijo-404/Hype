@@ -12,7 +12,7 @@ start_inhibitor() {
     fi
     
     # Start new inhibitor (prevents idle, sleep, and screen lock)
-    systemd-inhibit --what=idle:sleep --who="Caffeine Mode" --why="User requested stay awake" --mode=block sleep infinity &
+    systemd-inhibit --what=idle:sleep --who="Caffeine Mode" --why="User requested stay awake" --mode=block sleep infinity >/dev/null 2>&1 &
     echo $! > "$PID_FILE"
 }
 

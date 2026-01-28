@@ -37,18 +37,18 @@
         "tooltip": false
     },
     "custom/caffeine": {
-        "exec": "~/.config/waybar/scripts/caffeine-control.sh",
+        "exec": "/home/dj/.config/waybar/scripts/caffeine-control.sh",
         "return-type": "json",
         "interval": 5,
         "format": "{}",
-        "on-click": "~/.config/waybar/scripts/caffeine-control.sh toggle",
+        "on-click": "/home/dj/.config/waybar/scripts/caffeine-control.sh toggle",
         "signal": 15
     },
     "custom/power-profile": {
-        "exec": "~/.config/waybar/scripts/power-profile.sh",
+        "exec": "/home/dj/.config/waybar/scripts/power-profile.sh",
         "return-type": "json",
         "interval": 5,
-        "on-click": "~/.config/waybar/scripts/power-profile.sh menu"
+        "on-click": "/home/dj/.config/waybar/scripts/power-profile.sh menu"
     },
     "tray": {
         "icon-size": 16,
