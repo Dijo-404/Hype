@@ -34,7 +34,7 @@ window#waybar {
 #clock-date,
 #workspaces,
 #pulseaudio,
-#pulseaudio.microphone,
+#pulseaudio\.microphone,
 #battery,
 #cpu,
 #memory,
@@ -148,8 +148,9 @@ window#waybar {
     color: @bg0;
 }
 
-/* Microphone muted */
-#pulseaudio\.microphone.source-muted {
+/* Microphone muted - trying multiple selectors */
+#pulseaudio\.microphone.source-muted,
+#pulseaudio\.microphone.muted {
     background-color: @yellow;
     color: @bg0;
 }
