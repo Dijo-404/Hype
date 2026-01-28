@@ -1,4 +1,4 @@
-# ⚡ Hype
+# Hype
 
 > A clean, minimal, and stable **Hyprland** configuration for Arch Linux.
 
@@ -6,11 +6,11 @@
 ![Hyprland](https://img.shields.io/badge/Hyprland-WM-00a4a6?style=for-the-badge&logo=hyprland&logoColor=white)
 ![Waybar](https://img.shields.io/badge/Waybar-BAR-green?style=for-the-badge&logo=waybar&logoColor=white)
 
-## 🖼️ Previews
+## Previews
 
 *(Add your screenshots here)*
 
-## ✨ Features
+## Features
 
 - **Window Manager**: Hyprland
 - **Bar**: Waybar (Everforest Theme)
@@ -20,11 +20,11 @@
 - **Shell**: Zsh + Powerlevel10k
 - **System**: Custom GRUB, Plymouth, and SDDM themes.
 
-## 🚀 Installation
+## Installation
 
 For a fresh install, follow the detailed guide:
 
-👉 **[Installation Guide](INSTALL.md)**
+**[Installation Guide](INSTALL.md)**
 
 ### Quick Start
 
@@ -34,12 +34,12 @@ cd Hype
 # Read INSTALL.md for tailored instructions
 ```
 
-## ⌨️ Shortcuts
+## Shortcuts
 
 - **[Keybindings](keybindings.md)**: Master your workflow.
 - **[Aliases](alias.md)**: Speed up your terminal usage.
 
-## 📦 structure
+## Structure
 
 ```
 Hype/
