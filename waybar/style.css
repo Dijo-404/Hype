@@ -142,9 +142,9 @@ window#waybar {
     color: @bg0;
 }
 
-/* Volume muted - yellow color */
-#pulseaudio.muted,
-#pulseaudio.bluetooth.muted {
+/* Volume muted - yellow color (exclude microphone) */
+#pulseaudio.muted:not(.microphone),
+#pulseaudio.bluetooth.muted:not(.microphone) {
     background-color: @yellow;
     color: @bg0;
 }
