@@ -149,12 +149,12 @@ window#waybar {
     color: @bg0;
 }
 
-/* Microphone muted - keep default background, no color change */
-/* #pulseaudio.microphone.source-muted,
+/* Microphone muted - yellow color */
+#pulseaudio.microphone.source-muted,
 #pulseaudio.microphone.muted {
     background-color: @yellow;
     color: @bg0;
-} */
+}
 
 /* Network disconnected */
 #network.disconnected {
