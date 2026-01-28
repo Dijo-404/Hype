@@ -64,15 +64,16 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 ### Plymouth Theme
 ```bash
-sudo cp -r plymouth/themes/* /usr/share/plymouth/themes/
+sudo cp -r plymouth/themes/spinner /usr/share/plymouth/themes/
 # Edit /etc/plymouth/plymouthd.conf to set the theme if needed
+#[Daemon]
+#Theme=spinner
 sudo mkinitcpio -P
 ```
 
 ### SDDM Theme
 ```bash
 sudo cp -r sddm/sugar-candy /usr/share/sddm/themes/
-sudo cp sddm/bg.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
 # Create/Edit /etc/sddm.conf.d/theme.conf
 # [Theme]
 # Current=sugar-candy
