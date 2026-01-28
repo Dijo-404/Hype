@@ -5,10 +5,10 @@ ID=2000
 
 case "$1" in
     up)
-        wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+
+        wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+
         ;;
     down)
-        wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-
+        wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-
         ;;
     mute)
         wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
@@ -22,7 +22,7 @@ mute=$(echo "$vol_info" | grep "MUTED")
 
 if [ -n "$mute" ]; then
     # Muted state
-    dunstify -a "Volume" -r "$ID" -u low -i audio-volume-muted \
+    dunstify -a "Volume" -r "$ID" -u low \
         -h string:x-dunst-stack-tag:volume \
         "󰝟 Muted"
 else

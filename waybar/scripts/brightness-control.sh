@@ -5,17 +5,17 @@ ID=2001
 
 case "$1" in
     up)
-        brightnessctl set 5%+
+        brightnessctl set 1%+
         ;;
     down)
-        brightnessctl set 5%-
+        brightnessctl set 1%-
         ;;
 esac
 
 # Get current brightness percentage
 current=$(brightnessctl get)
 max=$(brightnessctl max)
-percent=$(echo "scale=0; $current * 100 / $max" | bc)
+percent=$((current * 100 / max))
 
 # Select icon
 if [ "$percent" -lt 30 ]; then
@@ -26,7 +26,7 @@ else
     icon="󰃠"
 fi
 
-# Send notification
+# Send notification with progress bar (same style as volume)
 dunstify -a "Brightness" -r "$ID" -u low \
     -h int:value:"$percent" \
     -h string:x-dunst-stack-tag:brightness \
