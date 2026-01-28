@@ -156,7 +156,6 @@ hyprland
 hyprland-guiutils
 hyprlang
 hyprlock
-hyprpaper
 hyprpicker
 hyprtoolkit
 hyprutils

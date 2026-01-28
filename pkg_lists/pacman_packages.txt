@@ -21,7 +21,6 @@ htop
 hypridle
 hyprland
 hyprlock
-hyprpaper
 hyprpicker
 intel-media-driver
 intel-ucode
