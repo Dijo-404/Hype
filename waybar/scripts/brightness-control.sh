@@ -30,4 +30,4 @@ fi
 dunstify -a "Brightness" -r "$ID" -u low \
     -h int:value:"$percent" \
     -h string:x-dunst-stack-tag:brightness \
-    "$icon Brightness: ${percent}%"
+    "$icon  Brightness: ${percent}%"

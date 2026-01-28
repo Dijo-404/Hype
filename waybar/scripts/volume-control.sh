@@ -24,7 +24,7 @@ if [ -n "$mute" ]; then
     # Muted state
     dunstify -a "Volume" -r "$ID" -u low \
         -h string:x-dunst-stack-tag:volume \
-        "󰝟 Muted"
+        "󰝟  Muted"
 else
     # Select icon based on volume level
     if [ "$vol" -lt 30 ]; then
@@ -39,5 +39,5 @@ else
     dunstify -a "Volume" -r "$ID" -u low \
         -h int:value:"$vol" \
         -h string:x-dunst-stack-tag:volume \
-        "$icon Volume: ${vol}%"
+        "$icon  Volume: ${vol}%"
 fi

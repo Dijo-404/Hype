@@ -137,13 +137,13 @@
         },
         "tooltip": true,
         "tooltip-format": "Volume: {volume}%",
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+        "on-click": "~/.config/waybar/scripts/volume-control.sh mute"
     },
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "format-source": "󰍬",
         "format-source-muted": "󰍭",
-        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-click": "~/.config/waybar/scripts/mic-control.sh mute",
         "tooltip": true,
         "tooltip-format": "{source_desc} | Volume: {source_volume}%"
     },
