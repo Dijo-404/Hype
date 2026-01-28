@@ -150,8 +150,7 @@ window#waybar {
 }
 
 /* Microphone muted - yellow color */
-#pulseaudio.microphone.source-muted,
-#pulseaudio.microphone.muted {
+#pulseaudio.microphone.source-muted {
     background-color: @yellow;
     color: @bg0;
 }
