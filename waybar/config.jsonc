@@ -136,7 +136,7 @@
         },
         "tooltip": true,
         "tooltip-format": "Volume: {volume}%",
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl set-source-mute @DEFAULT_SOURCE@ toggle"
     },
     "pulseaudio#microphone": {
         "format": "{format_source}",

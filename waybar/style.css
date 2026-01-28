@@ -144,7 +144,13 @@ window#waybar {
 
 /* Pulseaudio muted */
 #pulseaudio.muted {
-    background-color: @grey0;
+    background-color: @yellow;
+    color: @bg0;
+}
+
+/* Microphone muted */
+#pulseaudio\.microphone.source-muted {
+    background-color: @yellow;
     color: @bg0;
 }
 
