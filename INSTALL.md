@@ -1,6 +1,6 @@
 # Hype - Arch Linux Hyprland Setup
 
-This repository contains my personal Arch Linux configuration (Hyprland, Waybar, Kitty, Zsh, etc.).
+This repository contains my personal Arch Linux configuration (Hyprland, Waybar, Alacritty, Bash, etc.).
 Follow these steps to replicate the setup on a fresh Arch install.
 
 ## Prerequisites
@@ -43,33 +43,16 @@ mkdir -p ~/.config
 # Copy config folders
 cp -r hypr ~/.config/
 cp -r waybar ~/.config/
-cp -r kitty ~/.config/
+cp -r alacritty ~/.config/
 cp -r rofi ~/.config/
 cp -r dunst ~/.config/
 cp -r fastfetch ~/.config/
 
-# Zsh Configs
-cp zsh/.zshrc ~/
-cp zsh/.p10k.zsh ~/
+# Bash Config
+cp bash/.bashrc ~/
 ```
 
 ## 4. System Configurations (Root Required)
-
-### GRUB Theme
-```bash
-sudo cp -r grub/theme /boot/grub/themes/
-sudo cp grub/default /etc/default/grub
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-```
-
-### Plymouth Theme
-```bash
-sudo cp -r plymouth/themes/spinner /usr/share/plymouth/themes/
-# Edit /etc/plymouth/plymouthd.conf to set the theme if needed
-#[Daemon]
-#Theme=spinner
-sudo mkinitcpio -P
-```
 
 ### SDDM Theme
 ```bash
@@ -77,13 +60,6 @@ sudo cp -r sddm/sugar-candy /usr/share/sddm/themes/
 # Create/Edit /etc/sddm.conf.d/theme.conf
 # [Theme]
 # Current=sugar-candy
-```
-
-### Initramfs
-Copy the `mkinitcpio.conf` if you want my specific hooks/modules.
-```bash
-sudo cp mkinitcpio.conf /etc/mkinitcpio.conf
-sudo mkinitcpio -P
 ```
 
 ## 5. Finalize

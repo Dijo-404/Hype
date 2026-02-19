@@ -1,13 +1,4 @@
 {
-    "logo": {
-        "source": "~/.config/fastfetch/logo/pochita.icon",
-        "type": "kitty-direct",
-        "padding": {
-            "top": 2,
-            "left": 3,
-            "right": 4
-        }
-    },
     "display": {
         "separator": "   "
     },

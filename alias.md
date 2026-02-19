@@ -1,4 +1,4 @@
-# Zsh Aliases
+# Bash Aliases
 
 ## General
 - `c`, `cl`: Clear screen
@@ -40,7 +40,7 @@
 - `dc`: `docker compose`
 
 ## Config Shortcuts
-- `zshrc`: Edit `~/.zshrc`
+- `bashrc`: Edit `~/.bashrc`
 - `hyprconf`: Edit `hyprland.conf`
-- `kittyconf`: Edit `kitty.conf`
-- `reload`: Source `~/.zshrc`
+- `alacrittyconf`: Edit `alacritty.toml`
+- `reload`: Source `~/.bashrc`

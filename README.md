@@ -14,11 +14,11 @@
 
 - **Window Manager**: Hyprland
 - **Bar**: Waybar (Everforest Theme)
-- **Terminal**: Kitty
+- **Terminal**: Alacritty
 - **Launcher**: Rofi
 - **Notifications**: Dunst
-- **Shell**: Zsh + Powerlevel10k
-- **System**: Custom GRUB, Plymouth, and SDDM themes.
+- **Shell**: Bash
+- **System**: Custom SDDM theme.
 
 ## Installation
 
@@ -45,8 +45,8 @@ cd Hype
 Hype/
 ├── hypr/          # Hyprland Configs
 ├── waybar/        # Status Bar
-├── zsh/           # Shell Configs
-├── kitty/         # Terminal
+├── bash/          # Shell Configs
+├── alacritty/     # Terminal
 ├── rofi/          # Launcher
 ├── dunst/         # Notifications
 └── ...

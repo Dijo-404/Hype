@@ -23,7 +23,7 @@
 | **Move Window** | | |
 | `SUPER + CTRL + SHIFT + Arrows` | `movewindow` | Move window |
 | **Applications** | | |
-| `SUPER + T` | `kitty` | Terminal |
+| `SUPER + T` | `alacritty` | Terminal |
 | `SUPER + E` | `dolphin` | File Manager |
 | `SUPER + C` | `nvim` | Text Editor |
 | `SUPER + B` | `firefox` | Browser |
